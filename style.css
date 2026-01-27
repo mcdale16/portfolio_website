@@ -98,10 +98,10 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  left: 600px;
 }
 
 .project-card {
+  left: 60px;
   background: rgba(255, 255, 255, 255); /* fully white */
   color: var(--text-dark);
   border: 2px solid var(--text-dark);
@@ -109,7 +109,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card ul {
@@ -132,11 +131,6 @@ section {
   color: var(--text-dark);
   border-bottom: 2px solid currentColor;
 }
-
-/*.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 6px 6px 0 var(--text-dark);
-}*/
 
 /* contact section */
 #contact {
