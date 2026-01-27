@@ -101,8 +101,11 @@ section {
 }
 
 .project-card {
-  left: 60px;
-  background: rgba(255, 255, 255, 255); /* fully white */
+  left: 150px;
+  height: 30vh;
+  background-image: url("menu_screen_final.png");
+  background-size: cover;
+  background-position: center;
   color: var(--text-dark);
   border: 2px solid var(--text-dark);
   padding: 1.5rem;
