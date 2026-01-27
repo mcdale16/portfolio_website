@@ -97,8 +97,8 @@ section {
 /* projects section */
 .project-grid {
   position: absolute;
-  top: 70%;              
-  right: 0.5%;           
+  top: 20%;              
+  right: 10%;           
   transform: translateY(-50%);
   width: 80%;   
   display: grid;
