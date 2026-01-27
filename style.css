@@ -73,6 +73,7 @@ section {
   background-image: url("my_projects_screen.png");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 /* overlay (need to adjust) */
@@ -95,6 +96,11 @@ section {
 
 /* projects section */
 .project-grid {
+  position: absolute;
+  top: 55%;              
+  right: 5%;           
+  transform: translateY(-50%);
+  width: 60%;   
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
