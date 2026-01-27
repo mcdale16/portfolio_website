@@ -1,4 +1,4 @@
-/* RESET */
+/* reset screen */
 *,
 *::before,
 *::after {
@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-/* VARIABLES */
+/* variables */
 :root {
   --bg-dark: #202020;
   --bg-light: #ffffff;
@@ -17,7 +17,7 @@
   --accent-alt: #ff914d;
 }
 
-/* BASE */
+/* base */
 html {
   scroll-behavior: smooth;
 }
@@ -29,7 +29,7 @@ body {
   background-color: var(--bg-light);
 }
 
-/* TYPOGRAPHY */
+/* typograhy */
 h1, h2, h3 {
   font-weight: 700;
   line-height: 1.1;
@@ -59,7 +59,7 @@ section {
   padding: 5rem 1.5rem;
 }
 
-/* HERO */
+/* hero (header screen) */
 .hero {
   height: 100vh;
   background-image: url("header_screen.png");
@@ -67,7 +67,7 @@ section {
   background-position: center;
 }
 
-/* ABOUT BACKGROUND */
+/* about background */
 #about {
   position: relative;
   min-height: 100vh;
@@ -78,7 +78,7 @@ section {
   align-items: center;
 }
 
-/* DARK OVERLAY */
+/* overlay (need to adjust) */
 #about::before {
   content: "";
   position: absolute;
@@ -86,7 +86,7 @@ section {
   background: rgba(0, 0, 0, 0.45);
 }
 
-/* CONTENT WRAPPER */
+/* content wrapper */
 .about-content {
   position: relative;
   z-index: 1;
@@ -96,7 +96,7 @@ section {
   color: var(--text-light);
 }
 
-/* PROJECTS */
+/* projects section */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -140,7 +140,7 @@ section {
   box-shadow: 6px 6px 0 var(--text-dark);
 }
 
-/* CONTACT */
+/* contact section */
 #contact {
   position: relative;
   min-height: 100vh;
@@ -149,6 +149,24 @@ section {
   background-position: center;
   display: flex;
   align-items: center;
+}
+
+/* overlay (need to adjust) */
+#contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* content wrapper  */
+.contact-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-light);
 }
 
 #contact .links {
@@ -165,7 +183,7 @@ section {
   border-bottom: 2px solid currentColor;
 }
 
-/* FOOTER */
+/* footer */
 footer {
   padding: 2rem 1.5rem;
   text-align: center;
@@ -174,7 +192,7 @@ footer {
   color: var(--text-light);
 }
 
-/* MOBILE */
+/* mobile use */
 @media (max-width: 600px) {
   section {
     padding: 3rem 1.25rem;
