@@ -88,12 +88,16 @@ section {
 }
 
 /* about */
-#about p + p {
+#about {
   background-image: url("my_projects_screen.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh; /* full screen height */
+}
+
+#about p + p {
+  margin-top: 1rem;
 }
 
 /* projects */
