@@ -113,6 +113,21 @@ section {
   gap: 1rem;
 }
 
+/* i imagine there is a way to merge all these into one but will sort later */
+.project-card-1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card-1 li {
+  background-color: rgba(255,255,255,255); /* white background */
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--text-dark);
+  text-transform: uppercase;
+}
+
 .project-card-2 {
   height: 30vh;
   background-image: url("menu_screen_final.png");
@@ -124,6 +139,20 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.project-card-2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card-2 li {
+  background-color: rgba(255,255,255,255); /* white background */
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--text-dark);
+  text-transform: uppercase;
 }
 
 .project-card-3 {
@@ -139,13 +168,13 @@ section {
   gap: 1rem;
 }
 
-.project-card ul {
+.project-card-3 ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.project-card li {
+.project-card-3 li {
   background-color: rgba(255,255,255,255); /* white background */
   font-size: 0.8rem;
   padding: 0.3rem 0.6rem;
@@ -153,6 +182,7 @@ section {
   text-transform: uppercase;
 }
 
+/* draws a line above text */
 .project-card a {
   margin-top: auto;
   text-decoration: none;
