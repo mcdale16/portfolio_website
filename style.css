@@ -59,7 +59,7 @@ section {
   padding: 5rem 1.5rem;
 }
 
-/* hero (header screen) */
+/* hero background */
 .hero {
   height: 100vh;
   background-image: url("header_screen.png");
@@ -69,13 +69,10 @@ section {
 
 /* about background */
 #about {
-  position: relative;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("my_projects_screen.png");
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
 }
 
 /* overlay (need to adjust) */
@@ -83,7 +80,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0);
 }
 
 /* content wrapper */
@@ -99,8 +96,9 @@ section {
 /* projects section */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  left: 60px;
 }
 
 .project-card {
@@ -142,13 +140,10 @@ section {
 
 /* contact section */
 #contact {
-  position: relative;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("important_links_screen.png");
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
 }
 
 /* overlay (need to adjust) */
@@ -156,12 +151,13 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0);
 }
 
 /* content wrapper  */
 .contact-content {
   position: relative;
+  left: 30px;
   z-index: 1;
   width: 100%;
   max-width: 1200px;
