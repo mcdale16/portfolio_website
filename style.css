@@ -110,6 +110,7 @@ section {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end; /* put at right end of screen */
   gap: 1rem;
 }
 
@@ -182,12 +183,26 @@ section {
   text-transform: uppercase;
 }
 
-/* draws a line above text */
-.project-card a {
+/* draws a line above text, again sure i can make this more efficient */
+.project-card-1 a {
   margin-top: auto;
   text-decoration: none;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--text-light);
+  border-bottom: 2px solid currentColor;
+}
+.project-card-2 a {
+  margin-top: auto;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-light);
+  border-bottom: 2px solid currentColor;
+}
+.project-card-3 a {
+  margin-top: auto;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-light);
   border-bottom: 2px solid currentColor;
 }
 
