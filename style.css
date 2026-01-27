@@ -54,7 +54,7 @@ ul {
   list-style: none;
 }
 
-/* DEFAULT SECTION (content sections only) */
+/* default section */
 section {
   padding: 5rem 1.5rem;
 }
@@ -99,7 +99,7 @@ section {
 /* PROJECTS */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 2rem;
 }
 
@@ -142,8 +142,13 @@ section {
 
 /* CONTACT */
 #contact {
-  max-width: 1200px;
-  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("important_links_screen.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 
 #contact .links {
