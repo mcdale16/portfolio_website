@@ -50,10 +50,10 @@ section {
   background-image: url("my_projects_screen.png");
   background-size: cover;
   background-position: center;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: flex-end; /* push grid to the right */
-  padding-right: 5vw; /* small gap from right edge */
+  justify-content: flex-end;
+  padding-right: 5vw; */
 }
 
 .about-content {
@@ -65,17 +65,19 @@ section {
 /* project grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* smaller min for mobile */
+  gap: 2rem; /* slightly smaller gap for smaller screens */
+  width: 100%;
+  justify-items: center; /* center cards if space allows */
 }
 
 /* project card container */
 .project-card {
-  width: 100%;
-  max-width: 560px;
-  aspect-ratio: 12 / 8;        /* wider than tall */
+  width: 100%;        
+  max-width: 560px;  
+  aspect-ratio: 12 / 8; 
   border: 2px solid var(--text-dark);
-  background-size: contain;      /* show full image */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
