@@ -47,7 +47,7 @@ section {
 #about {
   position: relative;
   min-height: 100vh;
-  background-image: url("my_projects_screen.png");
+  background-image: url("my_projects-screen.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -131,7 +131,7 @@ section {
 /* contact container */
 #contact {
   min-height: 100vh;
-  background-image: url("important_links_screen.png");
+  background-image: url("important_links-screen.png");
   background-size: cover;
   background-position: center;
   display: flex;
