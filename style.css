@@ -65,23 +65,24 @@ section {
 /* project grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* smaller min for mobile */
-  gap: 2rem; /* slightly smaller gap for smaller screens */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   width: 100%;
-  justify-items: center; /* center cards if space allows */
+  justify-items: center;
 }
 
 /* project card container */
 .project-card {
-  width: 100%;        
-  max-width: 560px;  
-  aspect-ratio: 12 / 9; 
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 12 / 9;
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* individual backgrounds */
@@ -92,16 +93,20 @@ section {
 /* project card content */
 .project-body {
   padding: 1.5rem;
+  flex: 1;                          /* fills remaining card space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;        /* pushes list toward footer */
 }
 
 .project-body ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 1rem;              /* space above footer */
 }
 
 .project-body li {
-  margin-top: 90%;
   background-color: rgba(255,255,255,1);
   font-size: 1.4rem;
   padding: 0.3rem 0.6rem;
@@ -111,7 +116,6 @@ section {
 
 /* project card footer */
 .project-footer {
-  margin-top: auto;
   background-color: #ffffff;
   padding: 0.75rem 1.5rem;
   border-top: 2px solid var(--text-dark);
@@ -182,11 +186,13 @@ footer {
   }
 
   #about {
-    justify-content: center; /* center grid on mobile */
+    justify-content: center;
+    align-items: flex-start;        /* start from top */
     padding-right: 0;
+    padding-top: 40vh;              /* push cards lower on image */
   }
 
   .project-grid {
-    justify-items: center;   /* center items */
+    justify-items: center;
   }
 }
