@@ -52,21 +52,18 @@ section {
   background-position: center;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  justify-content: flex-end; /* push grid to the right */
+  padding-right: 5vw; /* small gap from right edge */
 }
 
 .about-content {
-  position: relative;
   width: 100%;
   max-width: 1200px;
-  margin-left: auto;   /* push container to the right */
-  margin-right: 0;
   color: var(--text-dark);
 }
 
 /* project grid */
 .project-grid {
-  margin-top: 11vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 3rem;
@@ -181,12 +178,12 @@ footer {
     padding: 3rem 1.25rem;
   }
 
-  .about-content {
-    margin: 0 auto;   /* reset container alignment on mobile */
+  #about {
+    justify-content: center; /* center grid on mobile */
+    padding-right: 0;
   }
 
   .project-grid {
-    margin-top: 4rem;
-    justify-items: center;   /* center grid on mobile */
+    justify-items: center;   /* center items */
   }
 }
