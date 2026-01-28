@@ -50,10 +50,10 @@ section {
   background-image: url("my_projects_screen.png");
   background-size: cover;
   background-position: center;
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 5vw; */
+  padding-right: 5vw;
 }
 
 .about-content {
