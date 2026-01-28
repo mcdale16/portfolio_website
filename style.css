@@ -1,4 +1,4 @@
-/* reset screen */
+/* reset */
 *,
 *::before,
 *::after {
@@ -29,7 +29,7 @@ body {
   background-color: var(--bg-light);
 }
 
-/* typograhy */
+/* typography */
 h1, h2, h3 {
   font-weight: 700;
   line-height: 1.1;
@@ -54,34 +54,36 @@ ul {
   list-style: none;
 }
 
-/* default section */
+/* global sections */
 section {
   padding: 5rem 1.5rem;
 }
 
-/* hero background */
+/* hero container */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("header_screen.png");
   background-size: cover;
   background-position: center;
 }
 
-/* about background */
+/* about / project container */
 #about {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
   background-image: url("my_projects_screen.png");
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-/* overlay (need to adjust) */
+/* optional overlay (increase opacity if needed) */
 #about::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 /* content wrapper */
@@ -94,144 +96,86 @@ section {
   color: var(--text-light);
 }
 
-/* projects section */
+/* project grid */
 .project-grid {
-  position: absolute;
-  top: 20%;              
-  right: 10%;           
-  transform: translateY(-50%);
-  width: 80%;   
+  margin-top: 10vh;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
-.project-card-1 {
-  height: 30vh;
-  background-image: url("header_screen.png");
-  background-size: cover;
-  background-position: center;
-  color: var(--text-dark);
-  border: 2px solid var(--text-dark);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* put at right end of screen */
-  gap: 1rem;
-}
-
-/* i imagine there is a way to merge all these into one but will sort later */
-.project-card-1 ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.project-card-1 li {
-  background-color: rgba(255,255,255,255); /* white background */
-  font-size: 0.8rem;
-  padding: 0.3rem 0.6rem;
-  border: 1px solid var(--text-dark);
-  text-transform: uppercase;
-}
-
-.project-card-2 {
-  height: 30vh;
-  background-image: url("menu_screen_final.png");
-  background-size: cover;
-  background-position: center;
-  color: var(--text-dark);
-  border: 2px solid var(--text-dark);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.project-card-2 ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.project-card-2 li {
-  background-color: rgba(255,255,255,255); /* white background */
-  font-size: 0.8rem;
-  padding: 0.3rem 0.6rem;
-  border: 1px solid var(--text-dark);
-  text-transform: uppercase;
-}
-
+/* project cards (shared) */
+.project-card-1,
+.project-card-2,
 .project-card-3 {
-  height: 30vh;
-  background-image: url("coming_soon.png");
+  height: clamp(220px, 30vh, 320px);
   background-size: cover;
   background-position: center;
-  color: var(--text-dark);
   border: 2px solid var(--text-dark);
   padding: 1.5rem;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+/* individual backgrounds */
+.project-card-1 { background-image: url("header_screen.png"); }
+.project-card-2 { background-image: url("menu_screen_final.png"); }
+.project-card-3 { background-image: url("coming_soon.png"); }
+
+/* tech tags */
+.project-card-1 ul,
+.project-card-2 ul,
 .project-card-3 ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
+.project-card-1 li,
+.project-card-2 li,
 .project-card-3 li {
-  background-color: rgba(255,255,255,255); /* white background */
-  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 0.75rem;
   padding: 0.3rem 0.6rem;
   border: 1px solid var(--text-dark);
   text-transform: uppercase;
 }
 
-/* draws a line above text, again sure i can make this more efficient */
-.project-card-1 a {
-  margin-top: auto;
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--text-light);
-  border-bottom: 2px solid currentColor;
-}
-.project-card-2 a {
-  margin-top: auto;
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--text-light);
-  border-bottom: 2px solid currentColor;
-}
+/* links */
+.project-card-1 a,
+.project-card-2 a,
 .project-card-3 a {
   margin-top: auto;
   text-decoration: none;
   font-weight: 600;
   color: var(--text-light);
   border-bottom: 2px solid currentColor;
+  width: fit-content;
 }
 
-/* contact section */
+/* contact container */
 #contact {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
   background-image: url("important_links_screen.png");
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
 }
 
-/* overlay (need to adjust) */
 #contact::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.25);
 }
 
-/* content wrapper  */
 .contact-content {
   position: relative;
-  left: 30px;
   z-index: 1;
   width: 100%;
   max-width: 1200px;
@@ -243,13 +187,12 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 1.5rem;
 }
 
 #contact a {
   font-weight: 600;
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--text-light);
   border-bottom: 2px solid currentColor;
 }
 
@@ -262,9 +205,12 @@ footer {
   color: var(--text-light);
 }
 
-/* mobile use */
+/* mobile tweaks */
 @media (max-width: 600px) {
   section {
     padding: 3rem 1.25rem;
+  }
+  .project-grid {
+    margin-top: 4rem;
   }
 }
