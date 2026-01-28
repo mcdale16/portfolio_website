@@ -102,7 +102,7 @@ section {
 
 .project-body li {
   background-color: rgba(255,255,255,1);
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 0.3rem 0.6rem;
   border: 1px solid var(--text-dark);
   text-transform: uppercase;
@@ -123,7 +123,7 @@ section {
 .project-footer a {
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--text-dark);
   border-bottom: 2px solid currentColor;
 }
