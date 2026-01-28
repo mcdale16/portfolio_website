@@ -68,14 +68,14 @@ section {
   margin-left: 5vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  gap: 50rem;
 }
 
 /* project card container */
 .project-card {
   height: clamp(320px, 60vh, 420px);
   width: clamp(320px, 60vh, 420px);
-  gap: 5rem; 
+  gap: 50rem; 
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
@@ -142,7 +142,7 @@ section {
 }
 
 .links {
-  position: relative;
+  display: center;
   align-items: center;
   padding: 3rem 1.25rem;
   border: 3px solid currentColour;
