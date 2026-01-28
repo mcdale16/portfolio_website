@@ -65,6 +65,7 @@ section {
 /* project grid */
 .project-grid {
   margin-top: 11vh;
+  margin-left: 5vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 3rem;
@@ -73,9 +74,9 @@ section {
 
 /* project card container */
 .project-card {
-  height: clamp(320px, 60vh, 420px);
+  height: clamp(300px, 40vh, 400px);
   width: 100%;
-  max-width: 420px;
+  max-width: 500px;
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
@@ -151,7 +152,6 @@ section {
   align-items: center;
   gap: 2.5rem;
   padding: 3rem 1.25rem;
-  border: 3px solid currentColor;
 }
 
 .links a {
@@ -160,6 +160,7 @@ section {
   font-weight: 600;
   color: var(--text-dark);
   border: 2px solid currentColor;
+  background-color: var(--bg-light);
   padding: 0.5rem 1.25rem;
 }
 
