@@ -76,7 +76,7 @@ section {
 .project-card {
   width: 100%;
   max-width: 560px;
-  aspect-ratio: 16 / 12;        /* wider than tall */
+  aspect-ratio: 12 / 8;        /* wider than tall */
   border: 2px solid var(--text-dark);
   background-size: contain;      /* show full image */
   background-repeat: no-repeat;
