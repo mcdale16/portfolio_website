@@ -65,17 +65,17 @@ section {
 /* project grid */
 .project-grid {
   margin-top: 11vh;
-  margin-left: 5vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 50rem;
+  gap: 3rem;
+  justify-items: center;
 }
 
 /* project card container */
 .project-card {
   height: clamp(320px, 60vh, 420px);
-  width: clamp(320px, 60vh, 420px);
-  gap: 50rem; 
+  width: 100%;
+  max-width: 420px;
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
@@ -113,9 +113,10 @@ section {
   background-color: #ffffff;
   padding: 0.75rem 1.5rem;
   border-top: 2px solid var(--text-dark);
-
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .project-footer a {
@@ -139,13 +140,18 @@ section {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
+/* links */
 .links {
-  display: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 2.5rem;
   padding: 3rem 1.25rem;
-  border: 3px solid currentColour;
+  border: 3px solid currentColor;
 }
 
 .links a {
@@ -154,6 +160,7 @@ section {
   font-weight: 600;
   color: var(--text-dark);
   border: 2px solid currentColor;
+  padding: 0.5rem 1.25rem;
 }
 
 /* footer */
