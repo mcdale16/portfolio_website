@@ -13,8 +13,6 @@
   --bg-light: #ffffff;
   --text-dark: #202020;
   --text-light: #ffffff;
-  --accent: #8c52ff;
-  --accent-alt: #ff914d;
 }
 
 /* base */
@@ -27,27 +25,6 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--bg-light);
-}
-
-/* typography */
-h1, h2, h3 {
-  font-weight: 700;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: 2rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  max-width: 65ch;
 }
 
 ul {
@@ -67,7 +44,7 @@ section {
   background-position: center;
 }
 
-/* about / project container */
+/* about / projects container */
 #about {
   position: relative;
   min-height: 100vh;
@@ -78,18 +55,8 @@ section {
   align-items: center;
 }
 
-/* optional overlay (increase opacity if needed) */
-#about::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0);
-}
-
-/* content wrapper */
 .about-content {
   position: relative;
-  z-index: 1;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -99,25 +66,20 @@ section {
 /* project grid */
 .project-grid {
   margin-top: 10vh;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
-/* project cards (shared) */
-.project-card-1,
-.project-card-2,
-.project-card-3 {
+/* project card container */
+.project-card {
   height: clamp(220px, 30vh, 320px);
+  border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
-  border: 2px solid var(--text-dark);
-  padding: 1.5rem;
 
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 /* individual backgrounds */
@@ -125,18 +87,18 @@ section {
 .project-card-2 { background-image: url("menu_screen_final.png"); }
 .project-card-3 { background-image: url("coming_soon.png"); }
 
-/* tech tags */
-.project-card-1 ul,
-.project-card-2 ul,
-.project-card-3 ul {
+/* project card content */
+.project-body {
+  padding: 1.5rem;
+}
+
+.project-body ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.project-card-1 li,
-.project-card-2 li,
-.project-card-3 li {
+.project-body li {
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 0.75rem;
   padding: 0.3rem 0.6rem;
@@ -144,17 +106,15 @@ section {
   text-transform: uppercase;
 }
 
-/* links */
+/* project card footer */
 .project-footer {
-  margin-top: auto;           
+  margin-top: auto;
   background-color: #ffffff;
   padding: 0.75rem 1.5rem;
-  width: calc(100% + 3rem);   
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+  border-top: 2px solid var(--text-dark);
 
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
 }
 
 .project-footer a {
@@ -166,7 +126,6 @@ section {
 
 /* contact container */
 #contact {
-  position: relative;
   min-height: 100vh;
   background-image: url("important_links_screen.png");
   background-size: cover;
@@ -175,32 +134,21 @@ section {
   align-items: center;
 }
 
-#contact::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25);
-}
-
 .contact-content {
-  position: relative;
-  z-index: 1;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  color: var(--text-light);
 }
 
-#contact .links {
+.links {
   display: flex;
-  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-#contact a {
-  font-weight: 600;
-  text-decoration: none;
+.links a {
   color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
   border-bottom: 2px solid currentColor;
 }
 
@@ -208,7 +156,6 @@ section {
 footer {
   padding: 2rem 1.5rem;
   text-align: center;
-  font-size: 0.9rem;
   background-color: var(--bg-dark);
   color: var(--text-light);
 }
@@ -218,6 +165,7 @@ footer {
   section {
     padding: 3rem 1.25rem;
   }
+
   .project-grid {
     margin-top: 4rem;
   }
