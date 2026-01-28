@@ -73,7 +73,7 @@ section {
 /* project card container */
 .project-card {
   height: clamp(320px, 60vh, 420px);
-  width: clamp(320px, 60vh, 420px);
+  /* width: clamp(320px, 60vh, 420px); */
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
@@ -99,7 +99,7 @@ section {
 }
 
 .project-body li {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,255)§;
   font-size: 0.75rem;
   padding: 0.3rem 0.6rem;
   border: 1px solid var(--text-dark);
