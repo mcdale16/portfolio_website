@@ -65,7 +65,7 @@ section {
 /* project grid */
 .project-grid {
   margin-top: 11vh;
-  margin-right: -6rem;
+  margin-left: -6rem;   /* push grid to the right by shifting left container margin */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 3rem;
@@ -76,9 +76,9 @@ section {
 .project-card {
   width: 100%;
   max-width: 560px;
-  aspect-ratio: 16 / 12;
+  aspect-ratio: 16 / 12;        /* wider than tall */
   border: 2px solid var(--text-dark);
-  background-size: contain;
+  background-size: contain;      /* show full image */
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -182,5 +182,7 @@ footer {
 
   .project-grid {
     margin-top: 4rem;
+    margin-left: 0;          /* reset margin on small screens */
+    justify-items: center;   /* center grid on mobile */
   }
 }
