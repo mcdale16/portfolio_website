@@ -83,7 +83,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0);
 }
 
 /* content wrapper */
@@ -145,15 +145,23 @@ section {
 }
 
 /* links */
-.project-card-1 a,
-.project-card-2 a,
-.project-card-3 a {
-  margin-top: auto;
+.project-footer {
+  margin-top: auto;           
+  background-color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  width: calc(100% + 3rem);   
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.project-footer a {
   text-decoration: none;
   font-weight: 600;
-  color: var(--text-light);
+  color: var(--text-dark);
   border-bottom: 2px solid currentColor;
-  width: fit-content;
 }
 
 /* contact container */
