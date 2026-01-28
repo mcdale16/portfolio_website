@@ -65,20 +65,21 @@ section {
 /* project grid */
 .project-grid {
   margin-top: 11vh;
-  margin-left: 5vh;
+  margin-left: -6rem;   /* pushes grid left */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 3rem;
-  justify-items: center;
+  justify-items: start;
 }
 
 /* project card container */
 .project-card {
-  width: clamp(300px, 40vh, 400px);
-  height: 80%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
   border: 2px solid var(--text-dark);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
