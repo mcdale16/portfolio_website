@@ -53,7 +53,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 5vw;
+  padding-right: 1vw;
 }
 
 .about-content {
@@ -75,7 +75,7 @@ section {
 .project-card {
   width: 100%;        
   max-width: 560px;  
-  aspect-ratio: 12 / 8; 
+  aspect-ratio: 12 / 9; 
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-repeat: no-repeat;
