@@ -74,7 +74,8 @@ section {
 /* project card container */
 .project-card {
   height: clamp(320px, 60vh, 420px);
-  width: clamp(320px, 60vh, 420px); */
+  width: clamp(320px, 60vh, 420px);
+  gap: 5rem; 
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
@@ -142,7 +143,8 @@ section {
 
 .links {
   position: relative;
-  left: 100px;
+  gap: 50px;
+  left: 300px;
   border: 3px solid currentColour;
 }
 
