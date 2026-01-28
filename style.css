@@ -143,8 +143,8 @@ section {
 
 .links {
   position: relative;
-  gap: 50px;
-  left: 300px;
+  align-items: center;
+  padding: 3rem 1.25rem;
   border: 3px solid currentColour;
 }
 
