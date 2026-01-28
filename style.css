@@ -59,7 +59,7 @@ section {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  color: var(--text-light);
+  color: var(--text-dark);
 }
 
 /* project grid */
@@ -72,7 +72,8 @@ section {
 
 /* project card container */
 .project-card {
-  height: clamp(220px, 30vh, 320px);
+  height: clamp(320px, 60vh, 420px);
+  width: clamp(320px, 60vh, 420px);
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
@@ -98,7 +99,7 @@ section {
 }
 
 .project-body li {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   font-size: 0.75rem;
   padding: 0.3rem 0.6rem;
   border: 1px solid var(--text-dark);
