@@ -64,7 +64,7 @@ section {
 
 /* project grid */
 .project-grid {
-  margin-top: 10vh;
+  margin-top: 11vh;
   margin-left: 5vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -74,7 +74,7 @@ section {
 /* project card container */
 .project-card {
   height: clamp(320px, 60vh, 420px);
-  /* width: clamp(320px, 60vh, 420px); */
+  width: clamp(320px, 60vh, 420px); */
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
@@ -146,11 +146,14 @@ section {
 }
 
 .links a {
-  color: var(--text-light);
+  color: var(--text-dark);
   text-decoration: none;
   font-size: 3.5rem;
   font-weight: 600;
-  border-bottom: 2px solid currentColor;
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* make them inline */
+  border: 2px solid currentColor;
 }
 
 /* footer */
