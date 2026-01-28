@@ -63,17 +63,14 @@ section {
 }
 
 /* project grid */
-/* project grid */
 .project-grid {
   margin-top: 11vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 3rem;
-
-  /* push grid to the right inside container */
-  justify-content: end;    /* moves the whole grid to the right */
-  justify-items: end;      /* aligns cards to the right in their columns */
+  transform: translateX(8rem); /* push to the right visually */
 }
+
 
 
 /* project card container */
