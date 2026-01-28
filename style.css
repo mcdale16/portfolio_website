@@ -141,18 +141,16 @@ section {
 }
 
 .links {
-  display: flex;
-  gap: 1.5rem;
+  position: relative;
+  left: 100px;
+  border: 3px solid currentColour;
 }
 
 .links a {
-  color: var(--text-dark);
   text-decoration: none;
   font-size: 3.5rem;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  flex-direction: row; /* make them inline */
+  color: var(--text-dark);
   border: 2px solid currentColor;
 }
 
