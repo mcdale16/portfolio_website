@@ -59,7 +59,8 @@ section {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;   /* push container to the right */
+  margin-right: 0;
   color: var(--text-dark);
 }
 
@@ -69,10 +70,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 3rem;
-  transform: translateX(8rem); /* push to the right visually */
 }
-
-
 
 /* project card container */
 .project-card {
@@ -104,7 +102,7 @@ section {
 }
 
 .project-body li {
-  background-color: rgba(255,255,255,255);
+  background-color: rgba(255,255,255,1);
   font-size: 1.5rem;
   padding: 0.3rem 0.6rem;
   border: 1px solid var(--text-dark);
@@ -183,9 +181,12 @@ footer {
     padding: 3rem 1.25rem;
   }
 
+  .about-content {
+    margin: 0 auto;   /* reset container alignment on mobile */
+  }
+
   .project-grid {
     margin-top: 4rem;
-    margin-left: 0;          /* reset margin on small screens */
     justify-items: center;   /* center grid on mobile */
   }
 }
