@@ -65,7 +65,7 @@ section {
 /* project grid */
 .project-grid {
   margin-top: 11vh;
-  margin-left: -6rem;   /* push grid to the right by shifting left container margin */
+  margin-left: -20rem;   /* push grid to the right by shifting left container margin */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 3rem;
@@ -124,6 +124,7 @@ section {
 .project-footer a {
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
   color: var(--text-dark);
   border-bottom: 2px solid currentColor;
 }
