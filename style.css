@@ -52,6 +52,7 @@ section {
   background-position: center;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .about-content {
