@@ -74,11 +74,9 @@ section {
 
 /* project card container */
 .project-card {
-  /* height: clamp(300px, 40vh, 400px); */
-  height: 60%;
-  width: 100%;
+  width: clamp(300px, 40vh, 400px);
+  height: 80%;
   max-width: 500px;
-  max-height: 300px
   border: 2px solid var(--text-dark);
   background-size: cover;
   background-position: center;
