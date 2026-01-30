@@ -202,6 +202,12 @@ footer {
     padding: 3rem 1.25rem;
   }
 
+  .hero {
+  /* min-height: 100vh; */
+  background-image: url("header_screen.png");
+  background-size: cover;
+  background-position: center;
+
   /* about / projects container */
   #about {
     background-image: none;          /* remove image */
@@ -213,5 +219,14 @@ footer {
 
   .project-grid {
     justify-items: center;
+  }
+
+  /* contact container */
+  #contact {
+    background-image: url("important_links-screen.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
   }
 }
