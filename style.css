@@ -77,33 +77,45 @@ section {
   max-width: 560px;
   aspect-ratio: 12 / 9;
   border: 2px solid var(--text-dark);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background-color: var(--bg-light);
+}
+
+/* project image area */
+.project-image {
+  flex: 1; /* fills space above footer */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* individual backgrounds */
-.project-card-1 { background-image: url("header_screen.png"); }
-.project-card-2 { background-image: url("menu_screen_final.png"); }
-.project-card-3 { background-image: url("coming_soon.png"); }
+.project-card-1 .project-image {
+  background-image: url("header_screen.png");
+}
+
+.project-card-2 .project-image {
+  background-image: url("menu_screen_final.png");
+}
+
+.project-card-3 .project-image {
+  background-image: url("coming_soon.png");
+}
 
 /* project card content */
 .project-body {
   padding: 1.5rem;
-  flex: 1;                          /* fills remaining card space */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;        /* pushes list toward footer */
 }
 
+/* project tech list */
 .project-body ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 0.2rem;              /* space above footer */
 }
 
 .project-body li {
