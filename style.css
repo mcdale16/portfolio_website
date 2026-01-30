@@ -83,24 +83,26 @@ section {
   background-color: var(--bg-light);
 }
 
-/* project image area */
-.project-image {
-  flex: 1; /* fills space above footer */
+/* image + content area */
+.project-top {
+  flex: 1; /* fills all space above footer */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* individual backgrounds */
-.project-card-1 .project-image {
+.project-card-1 .project-top {
   background-image: url("header_screen.png");
 }
 
-.project-card-2 .project-image {
+.project-card-2 .project-top {
   background-image: url("menu_screen_final.png");
 }
 
-.project-card-3 .project-image {
+.project-card-3 .project-top {
   background-image: url("coming_soon.png");
 }
 
@@ -197,11 +199,14 @@ footer {
     padding: 3rem 1.25rem;
   }
 
+  /* about / projects container */
   #about {
+    background-image: none;          /* remove image */
+    background-color: #202020;       /* dark grey */
     justify-content: center;
-    align-items: flex-start;        /* start from top */
+    align-items: flex-start;         /* start from top */
     padding-right: 0;
-    padding-top: 40vh;              /* push cards lower on image */
+    padding-top: 40vh;               /* push cards lower */
   }
 
   .project-grid {
