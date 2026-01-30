@@ -196,8 +196,8 @@ footer {
   color: var(--text-light);
 }
 
-/* mobile tweaks */
-@media (max-width: 600px) {
+/* mobile tweaks (to test on my iPhone) */
+@media (max-width: 1206px) {
   section {
     padding: 3rem 1.25rem;
   }
