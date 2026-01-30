@@ -95,11 +95,13 @@ section {
 
 /* individual backgrounds */
 .project-card-1 .project-top {
-  background-image: url("header_screen.png");
+  background-image: none;
+  background-color: #9c1a6a;
 }
 
 .project-card-2 .project-top {
-  background-image: url("menu_screen_final.png");
+  background-image: none;
+  background-color: #4d1d59;
 }
 
 .project-card-3 .project-top {
