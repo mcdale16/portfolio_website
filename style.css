@@ -103,7 +103,8 @@ section {
 }
 
 .project-card-3 .project-top {
-  background-image: url("coming_soon.png");
+  background-image: none;
+  background-color: #23627d;
 }
 
 /* project card content */
