@@ -203,18 +203,23 @@ footer {
     padding: 3rem 1.25rem;
   }
 
+  /* hero & contact: true full-screen on iPhone portrait */
   .hero,
   #contact {
     padding: 0;
-    min-height: 100svh;
+    height: 100dvh;
+    min-height: 100dvh;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
   }
 
+  /* about / projects: grey background on mobile */
   #about {
     background-image: none;
     background-color: var(--bg-dark);
