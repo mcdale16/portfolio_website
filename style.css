@@ -203,7 +203,7 @@ footer {
     padding: 3rem 1.25rem;
   }
 
-  /* hero & contact: true full-screen on iPhone portrait */
+  /* hero & contact: fit image inside screen on phone */
   .hero,
   #contact {
     padding: 0;
@@ -214,8 +214,8 @@ footer {
     align-items: center;
     justify-content: center;
 
-    background-size: cover;
-    background-position: center top;
+    background-size: contain;      /* THIS is the fix */
+    background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -227,4 +227,5 @@ footer {
     align-items: flex-start;
     padding-right: 0;
   }
+
 }
