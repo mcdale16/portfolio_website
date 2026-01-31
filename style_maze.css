@@ -11,6 +11,7 @@
 :root {
   --bg-dark: #202020;
   --bg-light: #ffffff;
+  --bg-blue: #4d1d59;
   --text-dark: #202020;
   --text-light: #ffffff;
 }
@@ -40,8 +41,12 @@ section {
   font-family: "Imperial Script", cursive;
   font-weight: 400;
   font-style: normal;
+  color: var(--text-light);
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 2rem 1.5rem;
   min-height: 100vh;
-  background-color: var(--bg-dark);
+  background-color: var(--bg-blue);
 }
 
 /* footer */
