@@ -203,11 +203,18 @@ footer {
     padding: 3rem 1.25rem;
   }
 
-  .hero,
-  #contact {
+  .hero {
+    background-image: url("header_phone.png");
     background-size: cover;
     background-position: center top;
   }
+
+  #contact {
+    background-image: url("links_phone.png");
+    background-size: cover;
+    background-position: center top;
+  }
+  
   /* hero & contact: fit image inside screen on phone
   .hero,
   #contact {
