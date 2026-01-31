@@ -41,12 +41,15 @@ section {
   font-family: "Imperial Script", cursive;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--bg-blue);
+  min-height: 100vh;
+}
+
+.hero p{
   margin-top: 20px;
   font-size: 3.5rem;
   text-align: center;
   color: var(--text-light);
-  background-color: var(--bg-blue);
-  min-height: 100vh;
 }
 
 /* footer */
