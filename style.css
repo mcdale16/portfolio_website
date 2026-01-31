@@ -199,50 +199,68 @@ footer {
 /* mobile tweaks (to test on my iPhone) */
 @media (max-width: 1206px) {
 
-  /* reset section padding for mobile rhythm */
   section {
     padding: 0;
   }
 
-  .hero,
-  #contact {
-    height: 100dvh;
+  .hero {
     min-height: 100dvh;
+    background-image: none;
+    background-color: var(--bg-dark);
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--text-light);
+    padding: 2rem 1.25rem;
   }
 
-  .hero {
-    background-image: url("header_phone.png");
+  .hero::before {
+    content: "Mathilde Couturier-Dale";
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
   }
 
-  #contact {
-    background-image: url("links_phone.png");
+  .hero::after {
+    content: "Personal portfolio";
+    font-size: 2rem;
+    opacity: 0.85;
   }
 
   #about {
     background-image: none;
     background-color: var(--bg-dark);
-
     min-height: auto;
     padding: 4rem 1.25rem;
-
     display: block;
   }
 
   .about-content {
-    color: var(--text-light);
+    color: var(--text-dark);
   }
 
-  /* mobile-only title */
   #about::before {
     content: "MY PROJECTS";
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+  }
+
+  #contact {
+    min-height: auto;
+    background-image: none;
+    background-color: var(--bg-dark);
+    padding: 4rem 1.25rem;
+    display: block;
+  }
+
+  #contact::before {
+    content: "IMPORTANT LINKS";
     display: block;
     text-align: center;
     font-size: 3rem;
@@ -251,9 +269,9 @@ footer {
   }
 
   .contact-content {
-    background-color: var(--bg-dark);
-    padding: 4rem 1.25rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .links {
@@ -270,4 +288,5 @@ footer {
   footer {
     font-size: 2rem;
   }
+
 }
