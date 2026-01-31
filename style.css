@@ -215,7 +215,7 @@ footer {
 
     text-align: center;
     color: var(--text-light);
-    padding: 2rem 1.25rem;
+    padding: 1rem 1rem;
   }
 
   .hero::before {
@@ -234,7 +234,7 @@ footer {
     background-image: none;
     background-color: var(--bg-dark);
     min-height: auto;
-    padding: 4rem 1.25rem;
+    padding: 1rem 1rem;
     display: block;
   }
 
@@ -247,7 +247,7 @@ footer {
     display: block;
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     color: var(--text-dark);
   }
 
@@ -255,7 +255,7 @@ footer {
     min-height: auto;
     background-image: none;
     background-color: var(--bg-dark);
-    padding: 2rem 1.25rem;
+    padding: 1rem 1rem;
     display: block;
   }
 
