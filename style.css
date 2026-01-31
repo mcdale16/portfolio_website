@@ -199,47 +199,75 @@ footer {
 /* mobile tweaks (to test on my iPhone) */
 @media (max-width: 1206px) {
 
+  /* reset section padding for mobile rhythm */
   section {
-    padding: 3rem 1.25rem;
+    padding: 0;
   }
 
-  .hero {
-    background-image: url("header_phone.png");
-    background-size: cover;
-    background-position: center top;
-  }
-
-  #contact {
-    background-image: url("links_phone.png");
-    background-size: cover;
-    background-position: center top;
-  }
-  
-  /*  COME BACK TO MOBILE TWEAKS
-  
-  hero & contact: fit image inside screen on phone
   .hero,
   #contact {
-    padding: 0;
-    height: 100dvh; 
+    height: 100dvh;
     min-height: 100dvh;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-size: contain; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  } */
+  }
 
-  /* about / projects: grey background on mobile */
+  .hero {
+    background-image: url("header_phone.png");
+  }
+
+  #contact {
+    background-image: url("links_phone.png");
+  }
+
   #about {
     background-image: none;
     background-color: var(--bg-dark);
-    justify-content: center;
-    align-items: flex-start;
-    padding-right: 0;
+
+    min-height: auto;
+    padding: 4rem 1.25rem;
+
+    display: block;
   }
 
+  .about-content {
+    color: var(--text-light);
+  }
+
+  /* mobile-only title */
+  #about::before {
+    content: "MY PROJECTS";
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--text-light);
+  }
+
+  .contact-content {
+    background-color: var(--bg-dark);
+    padding: 4rem 1.25rem;
+    width: 100%;
+  }
+
+  .links {
+    gap: 2rem;
+  }
+
+  .links a {
+    font-size: 2.5rem;
+    color: var(--text-light);
+    background-color: transparent;
+    border-color: var(--text-light);
+  }
+
+  footer {
+    font-size: 2rem;
+  }
 }
