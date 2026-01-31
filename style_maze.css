@@ -46,8 +46,8 @@ section {
 }
 
 .hero p{
-  margin-top: 20px;
-  font-size: 3.5rem;
+  margin-top: 50px;
+  font-size: 5.5rem;
   text-align: center;
   color: var(--text-light);
 }
