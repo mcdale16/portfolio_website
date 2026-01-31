@@ -204,7 +204,7 @@ footer {
   }
 
   .hero {
-    min-height: 40dvh;
+    min-height: 15dvh;
     background-image: none;
     background-color: var(--bg-dark);
 
@@ -255,7 +255,7 @@ footer {
     min-height: auto;
     background-image: none;
     background-color: var(--bg-dark);
-    padding: 4rem 1.25rem;
+    padding: 2rem 1.25rem;
     display: block;
   }
 
