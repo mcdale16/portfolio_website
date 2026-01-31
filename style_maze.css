@@ -43,8 +43,9 @@ section {
 }
 
 .hero p{
-  font-size: 5.5rem;
+  padding: 2rem 1.5rem;
   text-align: center;
+  font-size: 5.5rem;
   color: var(--text-light);
 }
 
