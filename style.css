@@ -203,21 +203,26 @@ footer {
     padding: 3rem 1.25rem;
   }
 
-  /* hero & contact: fit image inside screen on phone */
+  .hero,
+  #contact {
+    background-size: cover;
+    background-position: center top;
+  }
+  /* hero & contact: fit image inside screen on phone
   .hero,
   #contact {
     padding: 0;
-    /* height: 100dvh; */
+    height: 100dvh; 
     min-height: 100dvh;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-size: contain;      /* THIS is the fix */
+    background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
-  }
+  } */
 
   /* about / projects: grey background on mobile */
   #about {
