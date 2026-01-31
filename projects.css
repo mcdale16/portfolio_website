@@ -30,11 +30,6 @@ ul {
   list-style: none;
 }
 
-/* global sections */
-section {
-  padding: 5rem 1.5rem;
-}
-
 /* hero container */
 .hero {
   min-height: 100vh;
