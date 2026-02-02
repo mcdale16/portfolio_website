@@ -202,9 +202,9 @@ footer {
 
 /* mobile tweaks (to test on my iPhone) */
 @media (max-width: 1206px) {
-
   section {
     padding: 0;
+    margin: 0;
   }
 
   .hero {
@@ -225,7 +225,7 @@ footer {
   .hero::before {
     content: "Mathilde Couturier-Dale";
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .hero::after {
@@ -238,7 +238,7 @@ footer {
     background-image: none;
     background-color: var(--bg-dark);
     min-height: auto;
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 1.5rem;
     display: block;
   }
 
@@ -246,41 +246,42 @@ footer {
     color: var(--text-dark);
   }
 
-  #about::before {
-    content: "MY PROJECTS";
+  #about::before,
+  #contact::before {
     background-color: var(--bg-green);
-    display: block;
+    display: inline-block;
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    padding: 0.5rem 1.5rem;
     color: var(--text-light);
+    margin: 0 auto 1rem auto;
+  }
+
+  #about::before {
+    content: "MY PROJECTS";
   }
 
   #contact {
     background-image: none;
     background-color: var(--bg-dark);
     min-height: auto;
-    padding: 1rem 1rem;
+    padding: 3rem 1rem 1rem; /* creates space from projects without white gap */
     display: block;
   }
 
   #contact::before {
     content: "IMPORTANT LINKS";
-    background-color: var(--bg-green);
-    display: block;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-light);
   }
 
   .contact-content {
     width: 90%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
 
   .links {
+    display: flex;
     gap: 2rem;
   }
 
@@ -294,5 +295,4 @@ footer {
   footer {
     font-size: 2rem;
   }
-
 }
