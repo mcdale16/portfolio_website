@@ -11,6 +11,9 @@
 :root {
   --bg-dark: #202020;
   --bg-light: #ffffff;
+  --bg-purple: #4d1d59;
+  --bg-rose: #9c1a6a;
+  --bg-navy: #23627d;
   --text-dark: #202020;
   --text-light: #ffffff;
 }
@@ -96,17 +99,17 @@ section {
 /* individual backgrounds */
 .project-card-1 .project-top {
   background-image: none;
-  background-color: #9c1a6a;
+  background-color: var(--bg-rose);
 }
 
 .project-card-2 .project-top {
   background-image: none;
-  background-color: #4d1d59;
+  background-color: var(--bg-purple);
 }
 
 .project-card-3 .project-top {
   background-image: none;
-  background-color: #23627d;
+  background-color: var(--bg-navy);
 }
 
 /* project card content */
@@ -265,7 +268,7 @@ footer {
     font-size: 3rem;
     margin-bottom: 3rem;
     padding: 1rem 2rem;
-    background-color: #4d1d59;
+    background-color: var(--bg-navy);
     color: var(--text-light);
   }
 
