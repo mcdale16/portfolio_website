@@ -220,7 +220,7 @@ footer {
 
     text-align: center;
     color: var(--text-light);
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .hero::before {
@@ -256,7 +256,7 @@ footer {
     display: block;
     background-color: var(--bg-green);
     color: var(--text-light);
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     font-size: 2.5rem;
     margin: 0 auto 1rem;
     width: fit-content;
