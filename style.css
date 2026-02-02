@@ -200,16 +200,6 @@ footer {
   color: var(--text-light);
 }
 
-/* section titles (shared) */
-.section-title {
-  display: inline-block;
-  background-color: var(--bg-green);
-  color: var(--text-light);
-  padding: 0.5rem 1.5rem;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
 /* mobile tweaks (to test on my iPhone) */
 @media (max-width: 1206px) {
 
@@ -260,6 +250,22 @@ footer {
     color: var(--text-dark);
   }
 
+  /* section headings (mobile, css-only, aligned with content) */
+  .about-content::before,
+  .contact-content::before {
+    display: block;
+    background-color: var(--bg-green);
+    color: var(--text-light);
+    padding: 0.5rem 1.5rem;
+    font-size: 3rem;
+    margin: 0 auto 1rem;
+    width: fit-content;
+  }
+
+  .about-content::before {
+    content: "MY PROJECTS";
+  }
+
   .project-grid {
     margin: 0 auto;
     justify-items: center;
@@ -280,6 +286,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact-content::before {
+    content: "IMPORTANT LINKS";
   }
 
   .links {
