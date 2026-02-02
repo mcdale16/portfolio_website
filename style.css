@@ -243,7 +243,7 @@ footer {
   }
 
   .about-content {
-    color: var(--text-light);
+    color: var(--text-dark);
   }
 
   #about::before {
@@ -253,7 +253,7 @@ footer {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    color: var(--text-light);
   }
 
   #contact {
@@ -265,13 +265,11 @@ footer {
 
   #contact::before {
     content: "IMPORTANT LINKS";
+    background-color: var(--bg-green);
     display: block;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background-color: var(--bg-green);
     color: var(--text-light);
   }
 
@@ -287,7 +285,7 @@ footer {
 
   .links a {
     font-size: 2.5rem;
-    color: var(--text-light);
+    color: var(--text-dark);
     background-color: transparent;
     border-color: var(--text-light);
   }
