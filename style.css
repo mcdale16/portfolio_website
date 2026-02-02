@@ -257,10 +257,10 @@ footer {
   }
 
   #contact {
-    min-height: auto;
     background-image: none;
     background-color: var(--bg-dark);
-    margin-top: 1rem;
+    min-height: auto;
+    padding: 1rem 1rem;
     display: block;
   }
 
@@ -269,13 +269,13 @@ footer {
     background-color: var(--bg-green);
     display: block;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--text-light);
   }
 
   .contact-content {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
   }
