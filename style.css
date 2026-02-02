@@ -258,14 +258,14 @@ footer {
   }
 
   #about::before {
-    content: "MY PROJECTS";
+    content: "   MY PROJECTS";
   }
 
   #contact {
     background-image: none;
     background-color: var(--bg-dark);
     min-height: auto;
-    padding: 3rem 1rem 1rem; /* creates space from projects without white gap */
+    padding: 2rem 1rem 1rem; /* creates space from projects without white gap */
     display: block;
   }
 
