@@ -14,6 +14,7 @@
   --bg-purple: #4d1d59;
   --bg-rose: #9c1a6a;
   --bg-navy: #23627d;
+  --bg-green: #185428;
   --text-dark: #202020;
   --text-light: #ffffff;
 }
@@ -242,11 +243,12 @@ footer {
   }
 
   .about-content {
-    color: var(--text-dark);
+    color: var(--text-light);
   }
 
   #about::before {
     content: "MY PROJECTS";
+    background-color: var(--bg-green);
     display: block;
     text-align: center;
     font-size: 3rem;
@@ -266,9 +268,10 @@ footer {
     display: block;
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
     padding: 1rem 2rem;
-    background-color: var(--bg-navy);
+    background-color: var(--bg-green);
     color: var(--text-light);
   }
 
