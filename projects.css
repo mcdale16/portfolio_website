@@ -36,6 +36,11 @@ ul {
 .hero {
   min-height: auto;
   background-color: var(--bg-dark);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--text-light);
+  text-align: center;
 }
 
 * {
@@ -44,7 +49,7 @@ ul {
 
 /* section */
 .design-ideas {
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   background: radial-gradient(circle at top, #1db95433, #0e0e0e 70%);
   overflow: hidden;
 }
@@ -52,11 +57,12 @@ ul {
 .design-ideas h1 {
   font-size: 2.8rem;
   margin-bottom: 2rem;
+  color: var(--text-light);
 }
 
 /* carousel */
 .carousel {
-  max-width: 480px; 
+  max-width: 250px; 
   margin: auto;
   position: relative;
 }
@@ -68,8 +74,6 @@ ul {
 
 /* slides */
 .slide {
-  /*min-width: 100%;
-  padding: 0 0.5rem;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +82,7 @@ ul {
 .slide img {
   width: 100%;
   height: auto;  
-  max-height: 350px;
+  max-height: 400px;
   object-fit: contain;
   border-radius: 8px;
   user-select: none;
