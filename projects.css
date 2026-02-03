@@ -10,8 +10,6 @@
 /* variables */
 :root {
   --bg-dark: #202020;
-  --bg-light: #ffffff;
-  --text-dark: #202020;
   --text-light: #ffffff;
 }
 
@@ -21,52 +19,57 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: "Tiny5", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   background-color: var(--bg-dark);
-}
-
-ul {
-  list-style: none;
-}
-
-/* hero container */
-.hero {
-  min-height: auto;
-  background-color: var(--bg-dark);
-  padding: 2rem 1.5rem;
-  text-align: center;
-  font-size: 3.5rem;
   color: var(--text-light);
-  text-align: center;
 }
 
-* {
-  box-sizing: border-box;
+/* hero */
+.hero {
+  padding: 2rem 1.5rem;
+  font-size: 3.5rem;
+  text-align: center;
 }
 
 /* section */
 .design-ideas {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 3rem;
   background: radial-gradient(circle at top, #1db95433, #0e0e0e 70%);
-  overflow: hidden;
 }
 
+/* title */
 .design-ideas h1 {
   font-size: 2.8rem;
   margin-bottom: 2rem;
-  color: var(--text-light);
 }
 
 /* carousel */
 .carousel {
-  max-width: 250px; 
+  width: 100%;
+  max-width: 600px;
   margin: auto;
-  position: relative;
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.6s ease;
+  overflow: hidden;
 }
 
+/* mobile tweaks - come back to */
+@media (max-width: 1026px) {
+  .carousel {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    max-width: 90vw;
+    padding: 0.75rem;
+  }
+}
+
+/* track */
 .carousel-track {
   display: flex;
   transition: transform 0.6s cubic-bezier(0.77, 0, 0.18, 1);
@@ -74,19 +77,28 @@ ul {
 
 /* slides */
 .slide {
+  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 0.75rem;
 }
 
+/* images */
 .slide img {
   width: 100%;
-  height: auto;  
-  max-height: 400px;
+  height: auto;
+  max-height: 320px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 14px;
   user-select: none;
   pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .slide img {
+    max-height: 240px;
+  }
 }
 
 /* dots */
@@ -94,7 +106,7 @@ ul {
   display: flex;
   justify-content: center;
   gap: 0.75rem;
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
 }
 
 .carousel-dots button {
@@ -118,6 +130,4 @@ footer {
   padding: 2rem 1.5rem;
   text-align: center;
   font-size: 3.5rem;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
 }
