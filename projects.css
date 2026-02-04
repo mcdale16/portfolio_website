@@ -31,7 +31,6 @@ p {
   font-style: normal;
   font-size: 2rem;
   padding: 1.5rem 2rem;
-  max-width: 50%; /* push paragraph to left of screen and carousel to right */
   display: inline;
   justify-content: left;
   text-align: left;
@@ -97,7 +96,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*padding: 0 0.75rem;*/
 }
 
 /* images */
