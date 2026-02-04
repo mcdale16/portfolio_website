@@ -60,7 +60,7 @@ p {
 /* layout row for text + carousel */
 .design-row {
   display: flex;
-  align-items: flex-start; /* top-align text and carousel */
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -74,9 +74,16 @@ p {
 .carousel {
   width: 100%;
   max-width: 50%;
-  padding: 0.75rem; /* reduced padding */
+  padding: 0.75rem;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.05);
+
+  /* glassmorphism */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+
   transition: background 0.6s ease;
   overflow: hidden;
 
@@ -129,8 +136,12 @@ p {
 .slide img {
   width: 100%;
   height: auto;
+
+  /* make images visually smaller */
+  max-height: 220px;
+
   object-fit: contain;
-  border-radius: 14px;
+  border-radius: 12px;
   user-select: none;
   pointer-events: none;
   display: block;
@@ -141,12 +152,12 @@ p {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 0.25rem; /* tighter spacing */
+  margin-top: 0.25rem;
 }
 
 .carousel-dots button {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   border: none;
   background: #ffffff55;
@@ -155,7 +166,7 @@ p {
 }
 
 .carousel-dots button.active {
-  width: 26px;
+  width: 22px;
   border-radius: 20px;
   background: #1db954;
 }
@@ -164,5 +175,5 @@ p {
 footer {
   padding: 2rem 1.5rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
