@@ -28,7 +28,7 @@ p {
   font-size: 2rem;
   padding: 1.5rem 2rem;
   max-width: 50%; /* push paragraph to left of screen and carousel to right */
-  display: flex;
+  display: inline;
   justify-content: left;
   text-align: left;
 }
@@ -59,7 +59,8 @@ p {
 .carousel {
   width: 100%;
   max-width: 40%;
-  margin-left: 50%; /* push carousel to right side of the screen */
+  display: inline;
+  /*margin-left: 50%; push carousel to right side of the screen */
   padding: 1rem;
   border-radius: 20px;
   /*background: rgba(255, 255, 255, 0.05)*/
