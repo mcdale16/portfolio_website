@@ -29,7 +29,7 @@ p {
   font-family: "Playwrite NZ Basic", cursive;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 1.5 rem;
   padding: 1.5rem 2rem;
   text-align: left;
   line-height: 1.4;
@@ -73,7 +73,7 @@ p {
 /* carousel */
 .carousel {
   width: 100%;
-  max-width: 50%;
+  max-width: 45%;
   padding: 0.75rem;
   border-radius: 20px;
 
@@ -138,7 +138,7 @@ p {
   height: auto;
 
   /* make images visually smaller */
-  max-height: 220px;
+  max-height: 350px;
 
   object-fit: contain;
   border-radius: 12px;
