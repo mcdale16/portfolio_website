@@ -122,6 +122,7 @@ p {
 /* track */
 .carousel-track {
   display: flex;
+  flex-wrap: wrap; /* dont't know where to put this come back to */
   transition: transform 0.6s cubic-bezier(0.77, 0, 0.18, 1); /* maybe need to adjust? */
 }
 
