@@ -21,26 +21,30 @@ slides.forEach((slide, i) => {
 
 const dots = document.querySelectorAll(".carousel-dots button");
 
-/* get slide width + gap (needed for peek effect) */
+/* get slide width, gap + centering offset */
 function getSlideMetrics() {
   const slide = slides[0];
   const slideWidth = slide.getBoundingClientRect().width;
   const gap = parseFloat(getComputedStyle(track).gap) || 0;
+  const carouselWidth = carousel.getBoundingClientRect().width;
 
-  return { slideWidth, gap };
+  /* center active slide in carousel */
+  const centerOffset = (carouselWidth - slideWidth) / 2;
+
+  return { slideWidth, gap, centerOffset };
 }
 
 /* update */
 function updateCarousel() {
-  const { slideWidth, gap } = getSlideMetrics();
+  const { slideWidth, gap, centerOffset } = getSlideMetrics();
 
-  const offset = index * (slideWidth + gap);
+  const offset = index * (slideWidth + gap) - centerOffset;
   track.style.transform = `translateX(-${offset}px)`;
 
   dots.forEach(dot => dot.classList.remove("active"));
   dots[index].classList.add("active");
 
-  /* active slide state (optional visual polish) */
+  // sync active slide state
   slides.forEach(slide => slide.classList.remove("active"));
   slides[index].classList.add("active");
 
@@ -89,3 +93,4 @@ window.addEventListener("resize", updateCarousel);
 
 /* init */
 updateCarousel();
+
