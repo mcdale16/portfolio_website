@@ -21,12 +21,28 @@ slides.forEach((slide, i) => {
 
 const dots = document.querySelectorAll(".carousel-dots button");
 
+/* get slide width + gap (needed for peek effect) */
+function getSlideMetrics() {
+  const slide = slides[0];
+  const slideWidth = slide.getBoundingClientRect().width;
+  const gap = parseFloat(getComputedStyle(track).gap) || 0;
+
+  return { slideWidth, gap };
+}
+
 /* update */
 function updateCarousel() {
-  track.style.transform = `translateX(-${index * 100}%)`;
+  const { slideWidth, gap } = getSlideMetrics();
+
+  const offset = index * (slideWidth + gap);
+  track.style.transform = `translateX(-${offset}px)`;
 
   dots.forEach(dot => dot.classList.remove("active"));
   dots[index].classList.add("active");
+
+  /* active slide state (optional visual polish) */
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
 
   // sync background colour
   const color = slides[index].dataset.color;
@@ -67,6 +83,9 @@ function handleSwipe(endX) {
 
   updateCarousel();
 }
+
+/* keep alignment on resize */
+window.addEventListener("resize", updateCarousel);
 
 /* init */
 updateCarousel();
